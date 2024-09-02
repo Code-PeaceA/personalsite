@@ -1,0 +1,85 @@
+body {
+    /* Colour Palette */
+    --purple: #781C68;
+    --teal: #319DA0;
+    --beige: #FFD39A;
+    --cream: #FFF5E1;
+}
+
+#hero {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-background {
+    background-image: url(/images/still-life-books-versus-technology.jpg);
+    background-color: var(--purple);
+    background-repeat: no-repeat;
+    background-size: 115%;
+    background-position: center top;
+}
+
+.teal-profile-name {
+    color: var(--teal);
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, var(--beige), var(--purple), var(--teal));
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+#about-me img{
+    height: 100%;
+}
+
+#contact h2 {
+    color: var(--purple) !important;
+}
+
+/* Breakpoint Extra Large - xl - >=1200px */
+@media (max-width: 1200px) {
+    
+    .hero-background {
+        background-size: 150%;
+    }
+}
+
+/* Breakpoint Large - lg - >=992px */
+@media (max-width: 992px) {
+    
+    .hero-background {
+        background-size: 185%;
+    }
+}
+
+
+/* Breakpoint Medium - md - >=768px */
+@media (max-width: 768px) {
+    
+    .hero-background {
+        background-size: 220%;
+    }
+}
+
+/* Breakpoint Small - sm - >=576px */
+@media (max-width: 576px) {
+    
+    .hero-background {
+        background-size: 275%;
+    }
+}
