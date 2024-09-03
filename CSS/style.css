@@ -14,7 +14,7 @@ body {
 }
 
 .hero-background {
-    background-image: url(./images/still-life-books-versus-technology.jpg);
+    background-image: url(/images/still-life-books-versus-technology.jpg);
     background-color: var(--purple);
     background-repeat: no-repeat;
     background-size: 115%;
